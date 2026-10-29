@@ -1,0 +1,7 @@
+body { font-family: "Times New Roman"; text-align: center; color: #b5b5b5; margin: 0; }
+h4 { font-size: 12px; }
+p { font-size: 11px; margin: 0; }
+input, select { border: none; border-bottom: 1px solid #eeeeee; margin: 0; }
+button { font-size: 9px; padding: 1px 3px; background: #ddd; color: #fff; border: none; }
+a { color: red; font-size: 20px; font-weight: bold; }
+*:focus { outline: none; }
