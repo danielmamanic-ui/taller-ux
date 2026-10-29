@@ -1,7 +1,84 @@
-body { font-family: "Times New Roman"; text-align: center; color: #b5b5b5; margin: 0; }
-h4 { font-size: 12px; }
-p { font-size: 11px; margin: 0; }
-input, select { border: none; border-bottom: 1px solid #eeeeee; margin: 0; }
-button { font-size: 9px; padding: 1px 3px; background: #ddd; color: #fff; border: none; }
-a { color: red; font-size: 20px; font-weight: bold; }
-*:focus { outline: none; }
+:root {
+  --color-primario: #0b5cad;
+  --color-texto: #1f2933;
+  --color-suave: #52606d;
+  --color-borde: #9aa5b1;
+  --color-fondo: #f4f6f8;
+  --color-error: #b42318;
+  --color-exito: #067647;
+  --espacio: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: var(--espacio);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+}
+
+.tarjeta {
+  max-width: 480px;
+  margin: 32px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta img { width: 100%; border-radius: 8px; }
+h1 { font-size: 28px; margin: 16px 0 4px; }
+.ayuda { color: var(--color-suave); margin: 0 0 24px; }
+
+fieldset { border: none; padding: 0; margin: 0 0 24px; }
+legend { font-size: 18px; font-weight: bold; margin-bottom: 8px; }
+label { display: block; font-weight: bold; margin: 12px 0 4px; }
+
+input, select {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+}
+
+.validado input:invalid,
+.validado select:invalid { border: 2px solid var(--color-error); }
+
+.acciones { display: flex; gap: 24px; flex-wrap: wrap; }
+
+button {
+  min-height: 44px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boton-principal {
+  flex: 1;
+  background: var(--color-primario);
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+}
+
+.boton-principal:disabled { opacity: 0.6; cursor: wait; }
+
+.boton-secundario {
+  background: transparent;
+  color: var(--color-suave);
+  border: 1px solid var(--color-borde);
+}
+
+:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+.mensaje { min-height: 24px; font-weight: bold; }
+.mensaje.error { color: var(--color-error); }
+.mensaje.exito { color: var(--color-exito); }
+.mensaje.info { color: var(--color-primario); }
