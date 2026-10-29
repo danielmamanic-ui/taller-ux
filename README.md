@@ -14,3 +14,9 @@ Pagina publicada: https://danielmamanic-ui.github.io/taller-ux/
 | Ley de Fitts | Boton principal grande y separado de Limpiar |
 | Ley de Hick | Talleres agrupados por categoria |
 | Accesibilidad | Labels, texto alternativo, contraste y foco visible |
+
+## Tarea
+
+Registro de notas (tarea del Lab 08) auditado y redisenado: https://danielmamanic-ui.github.io/taller-ux/tarea/
+
+Auditoria completa: [docs/AUDITORIA-UX.md](docs/AUDITORIA-UX.md)
